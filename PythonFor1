@@ -1,0 +1,9 @@
+#Declaração do modúlo time
+import time
+#Entrada do programa
+print('====Contagem dos fogos====')
+print('Vai começar !!!')
+for c in range(10,0,-1):
+    print(c)
+    time.sleep(1)
+print('Feliz ano novo !!!!!')
