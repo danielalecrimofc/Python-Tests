@@ -15,12 +15,15 @@ if op == 0:
         lista1.append(num)
         if c == 3:
             for d in range(0,4):
-                numer = int(input("Digite um valor para a primeira lista:"))
+                numer = int(input("Digite um valor para a segunda lista:"))
                 lista2.append(numer)
                 if d == 3:
-                    matriz.append(lista1) and matriz.append(lista2)
+                    matriz.append(lista1)
+                    matriz.append(lista2)
+                    print("Sua matriz é:{}".format(matriz))
 else:
+  f = 0
+  while f < 1:
     print("Opção errada")
-    
-
-print("Sua matriz é:{}".format(matriz))
+    break
+    f+=1
