@@ -4,6 +4,7 @@ lista = []
 matriz = []
 matriz_medias = []
 receb = 0
+j = 0
 
 l = 0
 m = 4
@@ -22,9 +23,19 @@ for c in range(0,10):
                 m += 4
                 continue
 
+f = 0
+for a in range(0,10):
+    for b in range(0,4):
+        if a == f:
+            receb += matriz[a][b]
+        if b == 3:
+            matriz_medias.append(receb/4)
+            print("A media do {}º aluno é {}".format(a + 1,matriz_medias[a]))
+            f += 1
+            receb = 0
 
-
-
+""" Fela da ****** resolvi kr********"""
+print(receb)
 print(matriz)
 print(matriz_medias)
 
