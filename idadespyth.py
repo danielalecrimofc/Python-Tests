@@ -25,7 +25,15 @@ anocb = anoc
 diaf = diac
 mesf = 1
 diast = 0
-contdiasm = 0
+
+diastes = 0
+if diai == 1 and mesi == 1:
+    if anoi % 400 == 0:
+        diast = 1
+    else:
+        if anoi % 4 == 0 and anoi % 100 != 0:
+            diast = 1
+
 while anoi != anoc:
     diasdomesat = diasm[mesi-1]
     for diai in range(diai,diasdomesat):
@@ -39,7 +47,12 @@ while anoi != anoc:
     if mesi == 13:
         mesi = 1
         anoi += 1
-
+        if anoi > anoia and anoi != anoc:
+            if anoi % 400 == 0:
+                diast += 1
+            else:
+                if anoi % 4 == 0 and anoi % 100 != 0:
+                    diast += 1
 
     if anoi == anoc:
         while mesf < mesc:
@@ -49,6 +62,7 @@ while anoi != anoc:
                 if diai == diasdta - 1:
                     diai = 0
             mesf += 1
+
             if mesf == mesc:
                 diai = 1
                 for diai in range(diai,diaf + 1):
@@ -56,4 +70,3 @@ while anoi != anoc:
 
 
 print(f"Da data {diaia}/{mesia}/{anoia} até {diacb}/{mescb}/{anocb} passaram-se {diast} dias !")
-
