@@ -12,12 +12,14 @@ anoc = int(input("Digite o ano da data chegada:"))
 
 diast = 0
 contdiasm = 0
+
 while anoi != anoc:
     diasdomesat = diasm[mesi-1]
     while diai < diasdomesat:
         diast += 1
         if diai == diasdomesat - 1:
             diai = 0
+        
 
     mesi += 1
     if mesi == 13 :
